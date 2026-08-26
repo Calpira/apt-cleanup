@@ -1,4 +1,8 @@
 #!/bin/bash
+
+export DEBIAN_FRONTEND=noninteractive
+export NEEDRESTART_MODE=a
+
 if [ "$EUID" -ne 0 ]; then
     echo "Por favor, ejecuta este script como root." 
     exit 1
