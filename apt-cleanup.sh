@@ -13,6 +13,8 @@ echo "-------------------------------"
 echo "Ejecutando limpieza del sistema"
 echo "-------------------------------"
 
+ESPACIO_ANTES=$(df / --output=used | tail -1)
+
 echo "Limpiando caché de paquetes..."
 apt clean
 apt autoclean
@@ -52,6 +54,15 @@ for HOME_DIR in /home/*; do
         rm -rf "$HOME_DIR/.cache/thumbnails/"*
     fi
 done
+
+echo "Vaciando papelera..."
+for HOME_DIR in /home/*; do
+    if [ -d "$HOME_DIR/.local/share/Trash" ]; then
+        rm -rf "$HOME_DIR/.local/share/Trash/files/"* \
+               "$HOME_DIR/.local/share/Trash/info/"*
+    fi
+done
+
 echo "-------------------------------"
 echo "Limpieza terminada"
 echo "-------------------------------"
@@ -61,7 +72,13 @@ echo "Estado final del disco:"
 echo
 
 df -h /
+echo "-------------------------------"
 
+ESPACIO_DESPUES=$(df / --output=used | tail -1)
+LIBERADO=$(( (ESPACIO_ANTES - ESPACIO_DESPUES) / 1024 ))
+
+echo
+echo "Espacio liberado: ${LIBERADO} MB"
 
 echo "-------------------------------"
 
