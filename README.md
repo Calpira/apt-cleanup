@@ -2,7 +2,7 @@
 
 
 ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat&logo=gnubash&logoColor=white)
-![Status](https://img.shields.io/badge/status-learning%20project-blue)
+![Status](https://img.shields.io/badge/learning%20project-blue)
 ![Last Commit](https://img.shields.io/github/last-commit/Calpira/apt-cleanup)
 ![License](https://img.shields.io/badge/license-MIT-blue)
 
