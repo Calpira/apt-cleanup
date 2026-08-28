@@ -26,8 +26,8 @@ Script de limpieza para sistemas basados en Debian/Ubuntu (probado en Linux Mint
 
 ## Requisitos
 
-- Distro basada en Debian/Ubuntu (usa `apt`)
-- systemd (usa `journalctl`)
+- Distro basada en Debian/Ubuntu
+- systemd 
 
 ---
 
@@ -49,5 +49,5 @@ sudo ./apt-cleanup.sh
 
 ## Problemas conocidos
 
-En algunos casos, mientras el script corre, la terminal puede dejar de responder al teclado. Todavía no identifiqué la causa exacta — probablemente relacionado con Cinnamon (el entorno de escritorio), no con el script en sí. En la practica se reesstablece reiniciando el entorno de escritorio (`Ctrl+Alt+Esc`)
+En algunos casos, mientras el script corre, la terminal puede dejar de responder al teclado. Todavía no identifiqué la causa exacta — probablemente relacionado con Cinnamon, no con el script en sí. En la practica se reesstablece reiniciando el entorno de escritorio (`Ctrl+Alt+Esc`)
 
