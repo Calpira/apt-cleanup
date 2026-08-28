@@ -9,9 +9,9 @@
 
 Script de limpieza para sistemas basados en Debian/Ubuntu (probado en Linux Mint).
 
-> Proyecto con fines de estudio: No es una herramienta profesional ni está pensada para producción — en caso de usar, revisar el código antes de correrlo.
+> Proyecto con fines de estudio: No es una herramienta profesional ni está pensada para producción - en caso de usar, revisar el código antes de correrlo.
 
----
+
 
 ## Qué hace
 
@@ -29,7 +29,7 @@ Script de limpieza para sistemas basados en Debian/Ubuntu (probado en Linux Mint
 - Distro basada en Debian/Ubuntu
 - systemd 
 
----
+
 
 ## Instalación
 
@@ -45,9 +45,9 @@ chmod +x apt-cleanup.sh
 sudo ./apt-cleanup.sh
 ```
 
----
+
 
 ## Problemas conocidos
 
-En algunos casos, mientras el script corre, la terminal puede dejar de responder al teclado. Todavía no identifiqué la causa exacta — probablemente relacionado con Cinnamon, no con el script en sí. En la practica se reesstablece reiniciando el entorno de escritorio (`Ctrl+Alt+Esc`)
+En algunos casos, mientras el script corre, la terminal puede dejar de responder al teclado. Todavía no identifiqué la causa exacta - probablemente relacionado con Cinnamon, no con el script en sí. En la practica se reesstablece reiniciando el entorno de escritorio (`Ctrl+Alt+Esc`)
 
